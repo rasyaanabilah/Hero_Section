@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <style>
+    /* Reset margin dan padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Pengaturan untuk section hero */
+    .hero-section {
+      position: relative;
+      height: 100vh; /* Mengisi seluruh tinggi layar */
+      background-image: url('Sky Blue Laptop Wallpaper.jpg'); /* Ganti dengan URL gambar background */
+      background-size: cover; /* Agar gambar background tidak terpotong */
+      background-position: center; /* Memastikan gambar tetap terlihat di tengah */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Pengaturan heading */
+    .hero-heading {
+      font-size: 3rem; /* Ukuran font untuk heading */
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    /* Pengaturan paragraf */
+    .hero-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+    }
+
+    /* Pengaturan gambar PNG di sebelah kanan bawah */
+    .hero-image {
+      position: absolute;
+      bottom: 20px; /* Jarak dari bawah */
+      right: 20px; /* Jarak dari kanan */
+      width: 150px; /* Ukuran gambar */
+    }
+
+    /* Responsif untuk perangkat mobile */
+    @media screen and (max-width: 768px) {
+      .hero-heading {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-image {
+        width: 100px; /* Mengurangi ukuran gambar di perangkat mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Section Hero -->
+  <section class="hero-section">
+    <h1 class="hero-heading">Welcome...</h1>
+    <p class="hero-subtitle">Selamat datang di dunia yang penuh inspirasi dan kreativitas. Temukan pengalaman baru yang menarik di setiap langkah Kamu.</p>
+    <img src="Sky Blue Laptop Wallpaper.jpg" alt="Hero Image" class="hero-image">
+  </section>2
+</body>
+</html>
